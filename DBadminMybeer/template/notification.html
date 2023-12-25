@@ -51,7 +51,26 @@
                         <button><a href=""><p><i class="bi bi-boxes"></i>Product Reward</p></a></button>
                     </ul>
                     <hr style="margin: 10px;">
-                    <button class="logout"> <a href="../login.html"><p><i class="bi bi-arrow-bar-right"></i>Log out</p></a></button>
+                    <button class="logout" id="modalLogout">
+                        <p><i class="bi bi-arrow-bar-right"></i>Log out</p>
+                    </button>
+    
+                    <!-- Logout modal -->
+                    <div id="LogoutModal" class="Logoutmodal">
+                        <!-- Modal content -->
+                        <div class="Logout-content">
+                            <div class="modal-header">
+                                <div class="Logout"><i class="bi bi-arrow-bar-right"></i>Log out</div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="sure-logout">Are you sure you want to Log out</div>
+                            </div>
+                            <div class="footer-logout">
+                                <button id="cancels" class="cancelslogout">Cancel</button>
+                                <button id="LogoutBtn" class="btn-logout">Logout</button>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
         <div class="right">

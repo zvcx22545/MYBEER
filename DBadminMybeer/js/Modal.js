@@ -1,55 +1,45 @@
-// Get the modal
-var modal = document.getElementById('adminModal');
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to handle modal display
+    function setupModal(modalId, openButtonId, closeButtonId) {
+        var modal = document.getElementById(modalId);
+        var openBtn = document.getElementById(openButtonId);
+        var closeBtn = document.getElementById(closeButtonId);
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+        if (openBtn) {
+            openBtn.onclick = function() {
+                if (modal) modal.style.display = "block";
+            };
+        }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+        if (closeBtn) {
+            closeBtn.onclick = function() {
+                if (modal) modal.style.display = "none";
+            };
+        }
 
-// Get the cancel button
-var cancelBtn = document.getElementById("cancelBtns");
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x) or the cancel button, close the modal
- cancelBtn.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+        return modal;
     }
-}
 
+    // Setup admin modal
+    var adminModal = setupModal('adminModal', 'myBtn', 'cancelBtns');
+    
+    // Setup logout modal
+    var logoutModal = setupModal('LogoutModal', 'modalLogout', 'cancels');
 
-// Modal popup Logout
-var Logoutmodal = document.getElementById('LogoutModal');
+    // When the user clicks anywhere outside of the modals, close them
+    window.onclick = function(event) {
+        if (event.target == adminModal) {
+            adminModal.style.display = "none";
+        } else if (event.target == logoutModal) {
+            logoutModal.style.display = "none";
+        }
+    };
 
-// Get the button that opens the modal
-var Logoutbtn = document.getElementById("modalLogout");
-
-// Get the cancel button
-var cancelsBtn = document.getElementById("cancels");
-
-// When the user clicks on the button, open the modal
-Logoutbtn.onclick = function() {
-    Logoutmodal.style.display = "block";
-}
-
-// When the user clicks on <span> (x) or the cancel button, close the Logoutmodal
- cancelsBtn.onclick = function() {
-    Logoutmodal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the Logoutmodal, close it
-window.onclick = function(event) {
-    if (event.target == Logoutmodal) {
-        Logoutmodal.style.display = "none";
+    // Logout button action
+    var logoutBtn = document.getElementById("LogoutBtn");
+    if (logoutBtn) {
+        logoutBtn.addEventListener("click", function() {
+            window.location.href = "../login.html";
+        });
     }
-}
+});
