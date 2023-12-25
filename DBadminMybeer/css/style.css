@@ -246,7 +246,7 @@ nav {
     border-left: none; /* ลบเส้นขอบด้านซ้ายของเซลล์ */
     border-right: none; /* ลบเส้นขอบด้านขวาของเซลล์ */
     border: none;
-    font-size: 12px;
+    font-size: clamp(10px,0.878vw,14px);
   }
   table tr {
     border-bottom: 1px solid #ddd; /* เส้นขอบด้านล่างของแถว */
