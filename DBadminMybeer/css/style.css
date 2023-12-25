@@ -40,6 +40,19 @@ i{
     background-color: #24B6E0;
     border-radius: 5px;
 }
+.col_1 {
+    width: 45px;
+}
+.col_2 {
+    width: 100px;
+}
+.col_3 {
+    width: 210px;
+}
+.col_4 {
+    width: 110px;
+}
+
 .dataTable{
   width: 100%;
   display: flex;
@@ -50,7 +63,7 @@ i{
 }
 table, td, th ,thNo ,thNo{  
     border: 2px solid #ddd;
-    text-align: center;
+    text-align: left;
   }
   
   table {
@@ -59,7 +72,6 @@ table, td, th ,thNo ,thNo{
    }
   th, td {
     padding: 15px;
-    width: 250px;
     right: 0;
   }
 
@@ -155,7 +167,13 @@ nav {
     height: 35px;
     background-color:  #241E20;
 }
+.emptyBox{
+    margin-bottom: 32px;
+}
 /* ส่วนขวา */
+.contentTop{
+    position: fixed;
+}
 .right {
     width: calc(100% - 265px); 
     height: 100%;
