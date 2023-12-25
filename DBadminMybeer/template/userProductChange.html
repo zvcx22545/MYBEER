@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/ordershistory.css">
     <link rel="stylesheet" href="../css/orders.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">   
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -57,7 +56,7 @@
         </div>
         <div class="right">
             <!-- ส่วนทางขวา -->
-            <nav> <h1><a href="" style="color: white;"><i class="bi bi-chevron-left"></i></a>Order Details</h1><h1><i class="bi bi-bell-fill" style="color:#28B7E1;cursor: pointer;"></i></h1></nav>
+            <nav> <h1><a href="" style="color: white;"><i class="bi bi-chevron-left"></i></a>Details</h1><h1><i class="bi bi-bell-fill" style="color:#28B7E1;cursor: pointer;"></i></h1></nav>
             <form action="">
                 <div class="search-icon">
                     <div class="icon"><i class="bi bi-search"></i></div>
@@ -67,14 +66,14 @@
                 </div>
              </form>
              <div class="userProfile">
-                <div><img class="photo" src="https://static.printler.com/cache/c/8/8/e/6/2/c88e62cb33a7b6e20b60af964d362a10883a43a1.jpg" alt=""></div>
+                <div><img class="photo" src="https://cdn-icons-png.flaticon.com/512/9131/9131529.png" alt=""></div>
                 <div class="userData">
                     <div>
                     <ul class="userDB"><h1>Peter Parker</h1></ul>
-                    <ul class="userDB"><div>Line ID : <label>Marina Molly</label></div></ul>
-                    <ul class="userDB"><div>Your LINE Point :<label><i class="bi bi-p-circle-fill" style="color: #00CB42;padding-left: 15px;margin-right: 5px;"></i>Marina Molly</label></div></ul>
-                    <ul class="userDB"><div>Game Point : <label><i class="bi bi-controller" style="color: #28B7E1;padding-left: 15px;margin-right: 5px;"></i>Marina Molly</label></div></ul>
-                    <ul class="userDB"><div>ที่อยู่การจัดส่งสินค้า : <br><br><label>ที่อยู่ 0/0 ตำบล เสาธงหิน ฮเภอ บางใหญ่ จังหวัด นนทบุรี รหัสไปรษณีย์  11140</label></div></ul>
+                    <ul class="userDB"><p>Line ID : <label>Marina Molly</label></p></ul>
+                    <ul class="userDB"><p>Your LINE Point :<label><i class="bi bi-p-circle-fill" style="color: #00CB42;padding-left: 15px;margin-right: 5px;"></i>Marina Molly</label></p></ul>
+                    <ul class="userDB"><p>Game Point : <label><i class="bi bi-controller" style="color: #28B7E1;padding-left: 15px;margin-right: 5px;"></i></class=>Marina Molly</label></p></ul>
+                    <ul class="userDB"><p>ที่อยู่การจัดส่งสินค้า : <br><br><label>ที่อยู่ 0/0 ตำบล เสาธงหิน ฮเภอ บางใหญ่ จังหวัด นนทบุรี รหัสไปรษณีย์  11140</label></p></ul>
                 </div>
                 <div class="dropdown">
                     <p><i class="bi bi-list"></i>Action</p>
@@ -90,100 +89,59 @@
         <a href="orderhst.html" class="menu-item"><div >ประวัติการสั่งซื้อ</div></a>
         <a href="userProductChange.html" class="menu-item"><div >การแลกซื้อสินค้า</div></a>
     </div>
-    
 <hr style="margin-top: 2px;">
-<div class="dataTable">
-    <table>
-    <tr class="header-content">
-      <th><p>No.<i class="bi bi-arrow-down-up"></i></p></th>
-      <th><p>Order<i class="bi bi-arrow-down-up"></i></p></th>
-      <th><p>Name<i class="bi bi-arrow-down-up"></i></p></th>
-      <th><p>Product<i class="bi bi-arrow-down-up"></i></p></th>
-      <th><p>Amount<i class="bi bi-arrow-down-up"></i></p></th>
-      <th><p>Price (THB)</p></th>
-      <th><p>Shipping<i class="bi bi-arrow-down-up"></i></p></th>
-      <th><p>Details</p></th>
-    <tr>
-      <td>1</td>
-      <td>202310230001</td>
-      <td>Peter Parker</td>
-      <td>My Beer</td>
-      <td>10</td>
-      <td>500.00</td>
-      <td><div class="status">
-        <div class="circle-status"></div>
-        <div class="show-status">Shipping</div>
-      </div></td>
-      <td><btn><p1>ดูรายละเอียด</p1></btn></td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>202310230002</td>
-        <td>Deen John</td>
-        <td>My Beer</td>
-        <td>5</td>
-        <td>250.00</td>
-        <td><div class="status">
-          <div class="circle-status"></div>
-          <div class="show-status">Complete</div>
-        </div></td>
-        <td><btn><p1>ดูรายละเอียด</p1></btn></td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>202310230003</td>
-        <td>Suriya Park</td>
-        <td>My Beer</td>
-        <td>10</td>
-        <td>500.00</td>
-        <td><div class="status">
-          <div class="circle-status"></div>
-          <div class="show-status">Complete</div>
-        </div></td>
-        <td><btn><p1>ดูรายละเอียด</p1></btn></td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>202310230004</td>
-        <td>Jin Kasuma</td>
-        <td>My Beer</td>
-        <td>10</td>
-        <td>500.00</td>
-        <td><div class="status">
-          <div class="circle-status"></div>
-          <div class="show-status">Complete</div>
-        </div></td>
-        <td><btn><p1>ดูรายละเอียด</p1></btn></td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>202310230005</td>
-        <td>Minnie Lama</td>
-        <td>My Beer</td>
-        <td>4</td>
-        <td>200.00</td>
-        <td><div class="status">
-          <div class="circle-status"></div>
-          <div class="show-status">Complete</div>
-        </div></td>
-        <td><btn><p1>ดูรายละเอียด</p1></btn></td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>202310230006</td>
-        <td>Jannie Mintra</td>
-        <td>My Beer</td>
-        <td>12</td>
-        <td>600.00</td>
-        <td><div class="status">
-          <div class="circle-status"></div>
-          <div class="show-status">Paid</div>
-        </div></td>
-        <td><btn><p1>ดูรายละเอียด</p1></btn></td>
-    </tr>
-  </table>
-  
-</div>
+            <div class="dataTable">
+                <table>
+                <tr class="header-content">
+                  <th><h2>No.<i class="bi bi-arrow-down-up"></i></h2></th>
+                  <th><h2>หมายเลขสั่งซื้อ<i class="bi bi-arrow-down-up"></i></h2></th>
+                  <th><h2>วันที่ทำรายการ<i class="bi bi-arrow-down-up"></i></h2></th>
+                  <th><h2>ชื่อผู้ใช้<i class="bi bi-arrow-down-up"></i></h2></th>
+                  <th><h2>สินค้า<i class="bi bi-arrow-down-up"></i></h2></th>
+                  <th><h2>ชื่อสินค้า<i class="bi bi-arrow-down-up"></i></h2></th>
+                  <th><h2>จำนวน<i class="bi bi-arrow-down-up"></i></h2></th>
+                  <th><h2>ราคา (บาท)<i class="bi bi-arrow-down-up"></i></h2></th>
+                  <th><h2>จำนวน Point ที่ใช้แลก<i class="bi bi-arrow-down-up"></i></h2></th>
+                  <th><h2>คงเหลือ<i class="bi bi-arrow-down-up"></i></h2></th>
+                  <th><h2>Approve<i class="bi bi-arrow-down-up"></i></h2></th>
+                  <th><h2>Shipping<i class="bi bi-arrow-down-up"></i></h2></th>
+                  <th><h2>รายละเอียด<i class="bi bi-arrow-down-up"></i></h2></th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>2023102300005</td>
+                  <td>12/12/2023</td>
+                  <td>Peter Parker</td>
+                  <td><i class="bi bi-card-image"></i></td>
+                  <td>Name of tyle</td>
+                  <td>Quantity</td>
+                  <td>Price</td>
+                  <td>Quantity of point for Change</td>
+                  <td>remaining</td>
+                  <td>remaining</td>
+                  <td><div class="status">
+                    <div class="circle-status"></div>
+                    <div class="show-status">Shipping</div>
+                  </div></td>
+                  <td><btn><p1>กำลังดำเนินการ</p1></btn></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>12/12/2023</td>
+                  <td><i class="bi bi-card-image"></i></td>
+                  <td>Name of tyle</td>
+                  <td><btn><p1>ยืนยันสิทธิ์</p1></btn></td>           
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>12/12/2023</td>
+                  <td><i class="bi bi-card-image"></i></td>
+                  <td>Name of tyle</td> 
+                  <td><btn><p1>ปฏิเสธ</p1></btn></td>          
+                </tr>
+              </table>
+              
+            </div>
             <div class="dataTable">
                 <div class="numberNo">
                     <div class="boxNo"><a href=""><h1>1</h1></a></div>
@@ -196,6 +154,5 @@
         </div>
     </div>
     <script src="../Js/detail.js"></script>
-    <script src="../Js/orderhst.js"></script>
 </body>
 </html>
