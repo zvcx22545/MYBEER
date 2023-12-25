@@ -61,7 +61,7 @@ i{
   align-items: center;
   justify-content: center;
 }
-table, td, th ,thNo ,thNo{  
+table, td, th {  
     border: 2px solid #ddd;
     text-align: left;
   }
@@ -73,6 +73,7 @@ table, td, th ,thNo ,thNo{
   th, td {
     padding: 15px;
     right: 0;
+    width: auto;
   }
 
 
