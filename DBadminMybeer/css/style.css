@@ -59,7 +59,7 @@ table, td, th ,thNo ,thNo{
    }
   th, td {
     padding: 15px;
-    width: 250px;
+    width: auto;
     right: 0;
   }
 
