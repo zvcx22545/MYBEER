@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/orderhst.css">
+    <link rel="stylesheet" href="../css/orders.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">   
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>My Beer</title>
 </head>
 <body>
@@ -13,7 +16,7 @@
             <!-- ส่วนทางซ้าย -->
             <h1 class="logo"></h1>
             
-            <div style="text-align: center;"><h1>My Beer <br> Back Office</h1></div>
+            <div style="text-align: center;"><h1>My Beer<br>Back Office</h1></div>
                 <div class="main">
                     <br>
                     <ul class="menu">
@@ -54,66 +57,29 @@
         </div>
         <div class="right">
             <!-- ส่วนทางขวา -->
-            <nav> <h1>สมาชิก</h1><h1><i class="bi bi-bell-fill" style="color:#28B7E1;cursor: pointer;"></i></h1></nav>
-            <form action="">
-                <div class="search-icon">
-                    <div class="icon"><i class="bi bi-search"></i></div>
-                    <div class="input">
-                        <input type="text" placeholder="Search" id="mysearch">
+            <nav> <h1><a href="productChange.html" style="color: white;"><i class="bi bi-chevron-left"></i></a>รายละเอียดคำสั่งซื้อ</h1><h1><i class="bi bi-bell-fill" style="color:#28B7E1;cursor: pointer;"></i></h1></nav>
+             
+    
+<div style="margin-top: 4rem;"></div>
+    <div class="dataTable">
+            <div style="background-color: #28B7E1;width: 1120px;height: 658px;"> 
+                <div style="background-color: rgb(0, 255, 0);width: 500px;height: 50px;margin-top: 10px;margin-left: 10px;"></div>
+                    <div class="innerContents">
+                    <div style="background-color: blueviolet;width: 770px;height: 550px;margin-top: 10px;margin-left: 10px;">
+                            <div style="background-color: #a6bdc4;width: 750px;height: 250px;margin: 10px;"></div>
+                            <div style="background-color: black;width: 400px;height: 200px;margin-left: 22.5rem;margin-top: -10px;"></div>
+                        </div>
+                    <div style="background-color: rgb(219, 9, 30);width: 320px;height: 570px;margin-top: 10px;margin-left: 10px;">
+                        <div style="text-align: center;justify-content: center;display: grid;padding: 10px;">
+                            <div style="background-color: rgb(17, 255, 0);width: 300px;height: 200px;"></div>
+                            <div style="background-color: rgb(11, 135, 110);width: 300px;height: 350px;"></div>
+                        </div>
+                        </div>
                     </div>
-                </div>
-             </form>
-             <div style="margin-top: 4rem;"></div>
-            <div class="dataTable">
-                <table>
-                <tr class="header-content">
-                  <th class="col_1"><h2>No.</h2></th>
-                  <th class="col_4"><h2>Line ID</h2></th>
-                  <th class="col_3"><h2>name</h2></th>
-                  <th class="col_4"><h2>Line Point</h2></th>
-                  <th class="col_4"><h2>Action</h2></th>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Griffin</td>
-                  <td>$100</td>
-                  <td>Griffin</td>
-                  <td><btn><a href="orderhst.html"><p1>ดูรายละเอียด</p1></a></btn></td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Griffin</td>
-                  <td>$150</td>
-                  <td>Griffin</td>
-                  <td><btn><a href="orderhst.html"><p1>ดูรายละเอียด</p1></a></btn></td>                
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Swanson</td>
-                  <td>$300</td>
-                  <td>Griffin</td>
-                  <td><btn><a href="orderhst.html"><p1>ดูรายละเอียด</p1></a></btn></td>                
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>$250</td>
-                  <td>Griffin</td>
-                  <td>$100</td> 
-                  <td><btn><a href="orderhst.html"><p1>ดูรายละเอียด</p1></a></btn></td>                
-                </tr>
-              </table>
-              
-            </div>
-            <div class="dataTable">
-                <div class="numberNo">
-                    <div class="boxNo"><a href=""><h1>1</h1></a></div>
-                    <div class="boxNo"><a href=""><h1>2</h1></a></div>
-                    <div class="boxNo"><a href=""><h1>3</h1></a></div>
-                    <div class="boxNo"><a href=""><h1>4</h1></a></div>
-                    <div class="boxNo"><a href=""><h1>5</h1></a></div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="../Js/detail.js"></script>
 </body>
 </html>

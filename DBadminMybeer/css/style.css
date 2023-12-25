@@ -6,6 +6,10 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+label{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400 !important;
+}
 h1{
     font-size: 1.25rem;
     font-weight: 800;
@@ -23,6 +27,12 @@ i{
     width: 18px;
     margin-right: 18px;
     padding: 9px;
+}
+.innerContents{
+    display: flex;
+}
+.userpaymentProfile{
+    display: flexbox;
 }
 .numberNo{
     display: flex;
@@ -47,10 +57,10 @@ i{
     width: 100px;
 }
 .col_3 {
-    width: 210px;
+    width: 150px;
 }
 .col_4 {
-    width: 110px;
+    width: 200px;
 }
 
 .dataTable{

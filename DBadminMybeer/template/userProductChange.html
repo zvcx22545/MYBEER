@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/orderhst.css">
     <link rel="stylesheet" href="../css/orders.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">   
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -29,7 +30,7 @@
                         <button><a href="orders.html"><p><i class="bi bi-box-seam"></i>รายการสั่งซื้อ</p></a></button>
                     </ul>
                     <ul class="menu">
-                    <button><a href="#"><p><i class="bi bi-box-seam"></i>แลกซื้อสินค้า</p></a></button>
+                    <button><a href="productChange.html"><p><i class="bi bi-box-seam"></i>แลกซื้อสินค้า</p></a></button>
                 </ul>
                     <ul class="menu">
                         <button><a href=""><p><i class="bi bi-boxes"></i>จัดการสินค้า</p></a></button>
@@ -56,7 +57,7 @@
         </div>
         <div class="right">
             <!-- ส่วนทางขวา -->
-            <nav> <h1><a href="" style="color: white;"><i class="bi bi-chevron-left"></i></a>Details</h1><h1><i class="bi bi-bell-fill" style="color:#28B7E1;cursor: pointer;"></i></h1></nav>
+            <nav> <h1><a href="member.html" style="color: white;"><i class="bi bi-chevron-left"></i></a>Details</h1><h1><i class="bi bi-bell-fill" style="color:#28B7E1;cursor: pointer;"></i></h1></nav>
             <form action="">
                 <div class="search-icon">
                     <div class="icon"><i class="bi bi-search"></i></div>
@@ -66,14 +67,14 @@
                 </div>
              </form>
              <div class="userProfile">
-                <div><img class="photo" src="https://cdn-icons-png.flaticon.com/512/9131/9131529.png" alt=""></div>
+                <div><img class="photo" src="https://static.printler.com/cache/c/8/8/e/6/2/c88e62cb33a7b6e20b60af964d362a10883a43a1.jpg" alt=""></div>
                 <div class="userData">
                     <div>
                     <ul class="userDB"><h1>Peter Parker</h1></ul>
-                    <ul class="userDB"><p>Line ID : <label>Marina Molly</label></p></ul>
-                    <ul class="userDB"><p>Your LINE Point :<label><i class="bi bi-p-circle-fill" style="color: #00CB42;padding-left: 15px;margin-right: 5px;"></i>Marina Molly</label></p></ul>
-                    <ul class="userDB"><p>Game Point : <label><i class="bi bi-controller" style="color: #28B7E1;padding-left: 15px;margin-right: 5px;"></i></class=>Marina Molly</label></p></ul>
-                    <ul class="userDB"><p>ที่อยู่การจัดส่งสินค้า : <br><br><label>ที่อยู่ 0/0 ตำบล เสาธงหิน ฮเภอ บางใหญ่ จังหวัด นนทบุรี รหัสไปรษณีย์  11140</label></p></ul>
+                    <ul class="userDB"><div>Line ID : <label>Marina Molly</label></div></ul>
+                    <ul class="userDB"><div>Your LINE Point :<label><i class="bi bi-p-circle-fill" style="color: #00CB42;padding-left: 15px;margin-right: 5px;"></i>Marina Molly</label></div></ul>
+                    <ul class="userDB"><div>Game Point : <label><i class="bi bi-controller" style="color: #28B7E1;padding-left: 15px;margin-right: 5px;"></i>Marina Molly</label></div></ul>
+                    <ul class="userDB"><div>ที่อยู่การจัดส่งสินค้า : <br><br><label>ที่อยู่ 0/0 ตำบล เสาธงหิน ฮเภอ บางใหญ่ จังหวัด นนทบุรี รหัสไปรษณีย์  11140</label></div></ul>
                 </div>
                 <div class="dropdown">
                     <p><i class="bi bi-list"></i>Action</p>
@@ -93,19 +94,19 @@
             <div class="dataTable">
                 <table>
                 <tr class="header-content">
-                  <th><h2>No.<i class="bi bi-arrow-down-up"></i></h2></th>
-                  <th><h2>หมายเลขสั่งซื้อ<i class="bi bi-arrow-down-up"></i></h2></th>
-                  <th><h2>วันที่ทำรายการ<i class="bi bi-arrow-down-up"></i></h2></th>
-                  <th><h2>ชื่อผู้ใช้<i class="bi bi-arrow-down-up"></i></h2></th>
-                  <th><h2>สินค้า<i class="bi bi-arrow-down-up"></i></h2></th>
-                  <th><h2>ชื่อสินค้า<i class="bi bi-arrow-down-up"></i></h2></th>
-                  <th><h2>จำนวน<i class="bi bi-arrow-down-up"></i></h2></th>
-                  <th><h2>ราคา (บาท)<i class="bi bi-arrow-down-up"></i></h2></th>
-                  <th><h2>จำนวน Point ที่ใช้แลก<i class="bi bi-arrow-down-up"></i></h2></th>
-                  <th><h2>คงเหลือ<i class="bi bi-arrow-down-up"></i></h2></th>
-                  <th><h2>Approve<i class="bi bi-arrow-down-up"></i></h2></th>
-                  <th><h2>Shipping<i class="bi bi-arrow-down-up"></i></h2></th>
-                  <th><h2>รายละเอียด<i class="bi bi-arrow-down-up"></i></h2></th>
+                  <th class="col_1"><h2>No.</h2></th>
+                  <th><h2>หมายเลขสั่งซื้อ</h2></th>
+                  <th><h2>วันที่ทำรายการ</h2></th>
+                  <th><h2>ชื่อผู้ใช้</h2></th>
+                  <th class="col_3"><h2>สินค้า</h2></th>
+                  <th><h2>ชื่อสินค้า</h2></th>
+                  <th><h2>จำนวน</h2></th>
+                  <th><h2>ราคา (บาท)</h2></th>
+                  <th><h2>จำนวน Point ที่ใช้แลก</h2></th>
+                  <th><h2>คงเหลือ</h2></th>
+                  <th><h2>Approve</h2></th>
+                  <th><h2>Shipping</h2></th>
+                  <th class="col_3"><h2>รายละเอียด</h2></th>
                 </tr>
                 <tr>
                   <td>1</td>
