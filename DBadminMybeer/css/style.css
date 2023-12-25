@@ -192,6 +192,22 @@ nav {
     right: 0;
     margin-left: 265px;
 }
+.create{
+    position: fixed;
+    display: flex;
+    top: 2.5rem; /* ขยับจากด้านบนลงมา 4.5rem */
+    right: 0.9rem;
+    height: 25px;
+    background-color: #24B6E0;
+    width: 76px;
+    border-radius: 5px;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    padding: 4px;
+    color: white;
+    cursor: pointer;
+}
 .search-icon {
     position: fixed;
     top: 2.5rem; /* ขยับจากด้านบนลงมา 4.5rem */
