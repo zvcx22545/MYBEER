@@ -16,21 +16,21 @@ showStatuses.forEach(showStatus => {
     const statusText = showStatus.textContent.trim();
 
     // ตรวจสอบสถานะเพื่อกำหนดสีพื้นหลัง
-    if (statusText === 'Complete' || statusText === 'Paid') {
+    if (statusText === 'ชำระเงินแล้ว' || statusText === 'จัดส่งสำเร็จ') {
         // หากเงื่อนไขตรงกันให้เปลี่ยนสีพื้นหลังของ status เป็น #CBF4CC
         showStatus.parentElement.style.backgroundColor = '#CBF4CC';
 
         // หากเงื่อนไขตรงกันให้เปลี่ยนสีพื้นหลังของ circle-status เป็น #1FD831
         showStatus.parentElement.querySelector('.circle-status').style.backgroundColor = '#1FD831';
     }
-    if (statusText === 'Complete') {
+    if (statusText === 'ชำระเงินแล้ว') {
         // หากเงื่อนไขตรงกันให้เปลี่ยนสีพื้นหลังของ status เป็น #CBF4CC
         showStatus.parentElement.style.backgroundColor = '#CBF4CC';
 
         // หากเงื่อนไขตรงกันให้เปลี่ยนสีพื้นหลังของ circle-status เป็น #1FD831
         showStatus.parentElement.querySelector('.circle-status').style.backgroundColor = '#1FD831';
     }
-    else if (statusText === 'Paid') {
+    else if (statusText === 'จัดส่งสำเร็จ') {
         // หากเงื่อนไขตรงกันให้เปลี่ยนสีพื้นหลังของ status เป็น #CBF4CC
         showStatus.parentElement.style.backgroundColor = '#CBF4CC';
         showStatus.parentElement.style.justifyContent = 'flex-start';
@@ -39,12 +39,18 @@ showStatuses.forEach(showStatus => {
         // หากเงื่อนไขตรงกันให้เปลี่ยนสีพื้นหลังของ circle-status เป็น #1FD831
         showStatus.parentElement.querySelector('.circle-status').style.backgroundColor = '#1FD831';
     }
-    else if (statusText === 'Shipping') {
+    else if (statusText === 'รอชำระเงิน') {
         // หากเงื่อนไขตรงกันให้เปลี่ยนสีพื้นหลังของ status เป็น #CBF4CC
         showStatus.parentElement.style.backgroundColor = '#f4ebcb';
-
         // หากเงื่อนไขตรงกันให้เปลี่ยนสีพื้นหลังของ circle-status เป็น #1FD831
         showStatus.parentElement.querySelector('.circle-status').style.backgroundColor = '#F1BC00';
+    }
+    else if (statusText === 'ยังไม่ดำเนินการ') {
+        // หากเงื่อนไขตรงกันให้เปลี่ยนสีพื้นหลังของ status เป็น #CBF4CC
+        showStatus.parentElement.style.backgroundColor = 'var(--grey-100, #EEE)';
+
+        // หากเงื่อนไขตรงกันให้เปลี่ยนสีพื้นหลังของ circle-status เป็น #1FD831
+        showStatus.parentElement.querySelector('.circle-status').style.backgroundColor = '#B3B7BA';
     }
     else
     {
