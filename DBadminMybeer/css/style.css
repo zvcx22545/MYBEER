@@ -69,7 +69,7 @@ i{
   padding-top: 10px;
   text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
 }
 table, td, th {  
     border: 2px solid #ddd;
@@ -292,6 +292,7 @@ td{
     font-size: 14px;
     font-style: normal;
 }
+
 .boxNo a
 {
     text-decoration: none;

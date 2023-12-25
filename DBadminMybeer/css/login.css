@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -7,7 +9,10 @@
 }
 
 body{
-    background-color: rgba(0, 255, 255) !important;
+    background-size: 100% 120%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-image: url('https://cdn.discordapp.com/attachments/1175991933227782165/1187453820192706640/loginBg.png?ex=6596f18c&is=65847c8c&hm=fc04db2da634d8c8c0054484abaf274fbc7334709ddf91716e7ed86da7486f1a&');
 }
 
 container{
@@ -37,7 +42,7 @@ container{
 .header
 {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 800;
 }
 
 .container-login
@@ -58,11 +63,17 @@ container{
 #login
 {
     background-color: #28B7E1;
-    margin-top: 1.2rem;
+    margin-top: 2rem;
     margin-bottom: 1.2rem;
     color: #fff;
 }
 button a{
     text-decoration: none;
     color: inherit;
+}
+.loginButton{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
