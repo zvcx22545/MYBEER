@@ -1,142 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">   
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/Modalpopup.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
     <title>My Beer</title>
 </head>
+
 <body>
     <div class="container">
         <div class="left">
             <!-- ส่วนทางซ้าย -->
             <h1 class="logo"></h1>
-            
-            <div style="text-align: center;"><h1>My Beer <br> Back Office</h1></div>
-                <div class="main">
-                    <br>
-                    <ul class="menu">
-                        <h2>General Setting</h2>
-                    </ul>
-                    <ul class="menu">
-                        <button><a href="member.html"><p><i class="bi bi-people"></i>สมาชิก</p></a></button>
-                    
-                    </ul>
-                    <ul class="menu">
-                        <button><a href="orders.html"><p><i class="bi bi-box-seam"></i>รายการสั่งซื้อ</p></a></button>
-                    </ul>
-                    <ul class="menu">
-                    <button><a href="productChange.html"><p><i class="bi bi-box-seam"></i>แลกซื้อสินค้า</p></a></button>
+
+            <div style="text-align: center">
+                <h1>
+                    My Beer <br />
+                    Back Office
+                </h1>
+            </div>
+            <div class="main">
+                <br />
+                <ul class="menu">
+                    <h2>General Setting</h2>
                 </ul>
-                    <ul class="menu">
-                        <button><a href=""><p><i class="bi bi-boxes"></i>จัดการสินค้า</p></a></button>
-                    </ul>
-                    <ul class="menu">
-                        <button><a href="admin.html"><p><i class="bi bi-person-circle"></i>Admin</p></a></button>
-                    </ul>
-                    <hr style="margin: 10px;">
-                    <ul class="menu">
-                        <h2>Game Setting</h2>
-                    </ul>
-                    <ul class="menu">
-                        <button><a href=""><p><i class="bi bi-award"></i>ผู้เล่น</p></a></button>
-                    </ul>
-                    <ul class="menu">
-                        <button><a href=""><p><i class="bi bi-controller"></i>ตั้งค่าเกม</p></a></button>
-                    </ul>
-                    <ul class="menu">
-                        <button><a href=""><p><i class="bi bi-boxes"></i>Product Reward</p></a></button>
-                    </ul>
-                    <hr style="margin: 10px;">
-                    <button class="logout"> <a href="../login.html"><p><i class="bi bi-arrow-bar-right"></i>Log out</p></a></button>
+                <ul class="menu">
+                    <button>
+                        <a href="member.html">
+                            <p><i class="bi bi-people"></i>สมาชิก</p>
+                        </a>
+                    </button>
+                </ul>
+                <ul class="menu">
+                    <button>
+                        <a href="orders.html">
+                            <p><i class="bi bi-box-seam"></i>รายการสั่งซื้อ</p>
+                        </a>
+                    </button>
+                </ul>
+                <ul class="menu">
+                    <button>
+                        <a href="productChange.html">
+                            <p><i class="bi bi-box-seam"></i>แลกซื้อสินค้า</p>
+                        </a>
+                    </button>
+                </ul>
+                <ul class="menu">
+                    <button>
+                        <a href>
+                            <p><i class="bi bi-boxes"></i>จัดการสินค้า</p>
+                        </a>
+                    </button>
+                </ul>
+                <ul class="menu">
+                    <button>
+                        <a href="admin.html">
+                            <p><i class="bi bi-person-circle"></i>Admin</p>
+                        </a>
+                    </button>
+                </ul>
+                <hr style="margin: 10px" />
+                <ul class="menu">
+                    <h2>Game Setting</h2>
+                </ul>
+                <ul class="menu">
+                    <button>
+                        <a href>
+                            <p><i class="bi bi-award"></i>ผู้เล่น</p>
+                        </a>
+                    </button>
+                </ul>
+                <ul class="menu">
+                    <button>
+                        <a href>
+                            <p><i class="bi bi-controller"></i>ตั้งค่าเกม</p>
+                        </a>
+                    </button>
+                </ul>
+                <ul class="menu">
+                    <button>
+                        <a href>
+                            <p><i class="bi bi-boxes"></i>Product Reward</p>
+                        </a>
+                    </button>
+                </ul>
+                <hr style="margin: 10px" />
+                <button class="logout" id="modalLogout">
+                        <p><i class="bi bi-arrow-bar-right"></i>Log out</p>
+                </button>
+
+                <!-- Logout modal -->
+                <div id="LogoutModal" class="Logoutmodal">
+                    <!-- Modal content -->
+                    <div class="Logout-content">
+                        <div class="modal-header">
+                            <div class="Logout"><i class="bi bi-arrow-bar-right"></i>Log out</div>
+                        </div>
+                            <div class="modal-body">
+                                <div class="sure-logout">Are you sure you want to Log out</div>
+                            </div>
+                            <div class="footer-logout">
+                                <button id="cancels" class="cancelslogout">Cancel</button>
+                                <button id="LogoutBtn" class="btn-logout"><a href="../login.html">Logout</a></button>
+                            </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="right">
             <!-- ส่วนทางขวา -->
-            <nav> <h1>Admin</h1><h1><i class="bi bi-bell-fill" style="color:#28B7E1;cursor: pointer;"></i></h1></nav>
-                    <button class="create">
-                        <i class="bi bi-plus" style="margin-top: -16px;margin-right: 10px;margin-left: -15px;"></i><p>create</p>
-                    </button>
-            <form action="">
-                <div class="search-icon" style="right: 6rem;">
+            <nav>
+                <h1>Admin</h1>
+                <h1>
+                    <i class="bi bi-bell-fill" style="color: #28b7e1; cursor: pointer"></i>
+                </h1>
+            </nav>
+            <button class="create" id="myBtn">
+                <i class="bi bi-plus" style="margin-top: -16px; margin-right: 10px; margin-left: -15px"></i>
+                <p>create</p>
+            </button>
+
+            <!-- Modal popup create Admin -->
+            <div id="adminModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Create Admin</h2>
+                    </div>
+                    <form action>
+                        <div class="modal-body">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Admin" required />
+
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required />
+                            <div class="tel-and-email">
+                                <div class="email">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Please enter your email"
+                                        required />
+                                </div>
+                                <div class="tel">
+                                    <label for="tel">Tel.</label>
+                                    <input type="tel" id="tel" name="tel" placeholder="" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="cancelBtns" class="btn-cancel"type="button">Cancel</button>
+                            <button id="createBtn" class="btn-create">Create</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <form action>
+                <div class="search-icon" style="right: 6rem">
                     <div class="icon"><i class="bi bi-search"></i></div>
                     <div class="input">
-                        <input type="text" placeholder="Search" id="mysearch">
+                        <input type="text" placeholder="Search" id="mysearch" />
                     </div>
                 </div>
-             </form>
-             <div style="margin-top: 4rem;"></div>
+            </form>
+            <div style="margin-top: 4rem"></div>
             <div class="dataTable">
                 <table>
-                <tr class="header-content">
-                  <th class="col_1"><h2>No.</h2></th>
-                  <th class="col_2"><h2>ชื่อผู้ใช้</h2></th>
-                  <th class="col_2"><h2>สิทธิ์เข้าถึง</h2></th>
-                  <th class="col_2"><h2>อีเมล</h2></th>
-                  <th class="col_2"><h2>เบอร์โทร</h2></th>
-                  <th class="col_2"><h2>วันที่สร้าง</h2></th>
-                  <th class="col_2"><h2>จัดการ</h2></th>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Anny Lockhart</td>
-                  <td>Admin</td>
-                  <td>anny@mail.com</td>
-                  <td>0812345869</td>
-                  <td>10/09/2023</td>
-                  <td><i class="bi bi-pencil-square" style="color: black;"></i><i class="bi bi-trash" style="color: red;"></i></td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Anny Lockhart</td>
-                  <td>Admin</td>
-                  <td>anny@mail.com</td>
-                  <td>0812345869</td>
-                  <td>10/09/2023</td>
-                  <td><i class="bi bi-pencil-square" style="color: black;"></i><i class="bi bi-trash" style="color: red;"></i></td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Anny Lockhart</td>
-                  <td>Admin</td>
-                  <td>anny@mail.com</td>
-                  <td>0812345869</td>
-                  <td>10/09/2023</td>
-                  <td><i class="bi bi-pencil-square" style="color: black;"></i><i class="bi bi-trash" style="color: red;"></i></td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Anny Lockhart</td>
-                  <td>Admin</td>
-                  <td>anny@mail.com</td>
-                  <td>0812345869</td>
-                  <td>10/09/2023</td>
-                  <td><i class="bi bi-pencil-square" style="color: black;"></i><i class="bi bi-trash" style="color: red;"></i></td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Anny Lockhart</td>
-                  <td>Admin</td>
-                  <td>anny@mail.com</td>
-                  <td>0812345869</td>
-                  <td>10/09/2023</td>
-                  <td><i class="bi bi-pencil-square" style="color: black;"></i><i class="bi bi-trash" style="color: red;"></i></td>
-                </tr>
-                
-              </table>
-              
+                    <tr class="header-content">
+                        <th class="col_1">
+                            <h2>No.</h2>
+                        </th>
+                        <th class="col_2">
+                            <h2>ชื่อผู้ใช้</h2>
+                        </th>
+                        <th class="col_2">
+                            <h2>สิทธิ์เข้าถึง</h2>
+                        </th>
+                        <th class="col_2">
+                            <h2>อีเมล</h2>
+                        </th>
+                        <th class="col_2">
+                            <h2>เบอร์โทร</h2>
+                        </th>
+                        <th class="col_2">
+                            <h2>วันที่สร้าง</h2>
+                        </th>
+                        <th class="col_2">
+                            <h2>จัดการ</h2>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Anny Lockhart</td>
+                        <td>Admin</td>
+                        <td>anny@mail.com</td>
+                        <td>0812345869</td>
+                        <td>10/09/2023</td>
+                        <td>
+                            <i class="bi bi-pencil-square" style="color: black"></i><i class="bi bi-trash"
+                                style="color: red"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Anny Lockhart</td>
+                        <td>Admin</td>
+                        <td>anny@mail.com</td>
+                        <td>0812345869</td>
+                        <td>10/09/2023</td>
+                        <td>
+                            <i class="bi bi-pencil-square" style="color: black"></i><i class="bi bi-trash"
+                                style="color: red"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Anny Lockhart</td>
+                        <td>Admin</td>
+                        <td>anny@mail.com</td>
+                        <td>0812345869</td>
+                        <td>10/09/2023</td>
+                        <td>
+                            <i class="bi bi-pencil-square" style="color: black"></i><i class="bi bi-trash"
+                                style="color: red"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Anny Lockhart</td>
+                        <td>Admin</td>
+                        <td>anny@mail.com</td>
+                        <td>0812345869</td>
+                        <td>10/09/2023</td>
+                        <td>
+                            <i class="bi bi-pencil-square" style="color: black"></i><i class="bi bi-trash"
+                                style="color: red"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Anny Lockhart</td>
+                        <td>Admin</td>
+                        <td>anny@mail.com</td>
+                        <td>0812345869</td>
+                        <td>10/09/2023</td>
+                        <td>
+                            <i class="bi bi-pencil-square" style="color: black"></i><i class="bi bi-trash"
+                                style="color: red"></i>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <div class="dataTable">
                 <div class="numberNo">
-                    <div class="boxNo"><a href=""><h1>1</h1></a></div>
-                    <div class="boxNo"><a href=""><h1>2</h1></a></div>
-                    <div class="boxNo"><a href=""><h1>3</h1></a></div>
-                    <div class="boxNo"><a href=""><h1>4</h1></a></div>
-                    <div class="boxNo"><a href=""><h1>5</h1></a></div>
+                    <div class="boxNo">
+                        <a href>
+                            <h1>1</h1>
+                        </a>
+                    </div>
+                    <div class="boxNo">
+                        <a href>
+                            <h1>2</h1>
+                        </a>
+                    </div>
+                    <div class="boxNo">
+                        <a href>
+                            <h1>3</h1>
+                        </a>
+                    </div>
+                    <div class="boxNo">
+                        <a href>
+                            <h1>4</h1>
+                        </a>
+                    </div>
+                    <div class="boxNo">
+                        <a href>
+                            <h1>5</h1>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="../js/Modal.js"></script>
 </body>
+
 </html>

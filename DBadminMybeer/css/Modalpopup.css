@@ -1,0 +1,235 @@
+/* Modal create Admin */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: flex;
+  align-items: center; /* Align vertical */
+  justify-content: center; /* Align horizontal */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  margin: auto; /* Centering horizontally */
+  border-radius: 10px;
+  background: var(--Color-2, #fff);
+  padding: 20px;
+  width: 500px; /* Fixed width */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  animation-name: animatetop;
+    animation-duration: 0.5s;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+
+
+/* Add Animation */
+@keyframes animatetop {
+  from {
+      top: -50%;
+      opacity: 0;
+  }
+  to {
+      top: 50%;
+      opacity: 1;
+  }
+}
+.modal-header,
+.modal-footer {
+  padding: 16px 16px;
+  color: black;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.modal-header>h2 {
+  font-size: 1.5rem;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal-body>input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.email,
+.tel {
+  width: 100%;
+}
+
+.btn-cancel {
+  background-color: #e7e7e7;
+  color: black;
+}
+
+.btn-create {
+  background-color: #28B7E1;
+  color: white;
+  padding: 10px 15px;
+
+}
+
+.btn-cancel,
+.btn-create {
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.btn-cancel:hover {
+  background-color: #f800008a;
+}
+
+.modal-footer {
+  display: flex;
+}
+
+.tel-and-email {
+  display: flex;
+}
+
+/* Modal Logout */
+/* Modal Content/Box */
+.modal-content {
+  margin: 10% auto;
+  border-radius: 10px;
+  background: var(--Color-2, #fff);
+  padding: 20px;
+  width: 500px;
+  /* You can adjust this to be more responsive */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal-header,
+.modal-footer {
+  padding: 16px 16px;
+  color: black;
+}
+
+.modal-header
+{
+  display: flex;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.modal-header>h2 {
+  font-size: 1.5rem;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+/* Logout Modalpopup */
+.Logoutmodal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Disable scroll */
+  background-color: rgba(0, 0, 0, 0.31); /* Black w/ opacity */
+  padding-top: 30px; /* Padding top */
+  padding-bottom: 29px; /* Padding bottom */
+}
+
+/* Modal Content/Box */
+.Logout-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background: var(--Color-2, #fff);
+  padding: 20px;
+  width: 396px;
+ /* Fixed width, you can make it responsive as needed */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  animation-name: animatetop;
+  animation-duration: 0.5s;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {transform: translate(-50%, -50%) scale(0.7);}
+    to {transform: translate(-50%, -50%) scale(1);}
+}
+
+
+.btn-logout {
+  display: flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  border-radius: 8px;
+  background: var(--Secondary-Red, #F32D2D);
+
+}
+.btn-logout:hover
+{
+  background-color:#F32D2D;
+  border-radius: 8px;
+}
+
+.cancelslogout
+{
+border-radius: 8px;
+border: 1px solid #232325;
+background: #6C6C6C;
+text-align: center;
+color: #fff;
+}
+
+.cancelslogout:hover
+{
+  background-color:#6C6C6C ;
+  border-radius: 8px;
+}
+
+.footer-logout
+{
+  padding-top: 25px;
+  display: flex;
+  gap: 14px;
+}
+
+.sure-logout
+{
+  display: flex;
+}

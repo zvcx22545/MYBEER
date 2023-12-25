@@ -1,69 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/orders.css">
     <link rel="stylesheet" href="../css/orderhst.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">   
+    <link rel="stylesheet" href="../css/orders.css">
+    <link rel="stylesheet" href="../css/Modalpopup.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <title>My Beer</title>
 </head>
+
 <body>
     <div class="container">
         <div class="left">
             <!-- ส่วนทางซ้าย -->
             <h1 class="logo"></h1>
-            
-            <div style="text-align: center;"><h1>My Beer <br> Back Office</h1></div>
-                <div class="main">
-                    <br>
-                    <ul class="menu">
-                        <h2>General Setting</h2>
-                    </ul>
-                    <ul class="menu">
-                        <button><a href="member.html"><p><i class="bi bi-people"></i>สมาชิก</p></a></button>
-                    
-                    </ul>
-                    <ul class="menu">
-                        <button><a href="orders.html"><p><i class="bi bi-box-seam"></i>รายการสั่งซื้อ</p></a></button>
-                    </ul>
-                    <ul class="menu">
-                    <button><a href="productChange.html"><p><i class="bi bi-box-seam"></i>แลกซื้อสินค้า</p></a></button>
+
+            <div style="text-align: center;">
+                <h1>My Beer <br> Back Office</h1>
+            </div>
+            <div class="main">
+                <br>
+                <ul class="menu">
+                    <h2>General Setting</h2>
                 </ul>
-                    <ul class="menu">
-                        <button><a href=""><p><i class="bi bi-boxes"></i>จัดการสินค้า</p></a></button>
-                    </ul>
-                    <ul class="menu">
-                        <button><a href=""><p><i class="bi bi-person-circle"></i>Admin</p></a></button>
-                    </ul>
-                    <hr style="margin: 10px;">
-                    <ul class="menu">
-                        <h2>Game Setting</h2>
-                    </ul>
-                    <ul class="menu">
-                        <button><a href=""><p><i class="bi bi-award"></i>ผู้เล่น</p></a></button>
-                    </ul>
-                    <ul class="menu">
-                        <button><a href=""><p><i class="bi bi-controller"></i>ตั้งค่าเกม</p></a></button>
-                    </ul>
-                    <ul class="menu">
-                        <button><a href=""><p><i class="bi bi-boxes"></i>Product Reward</p></a></button>
-                    </ul>
-                    <hr style="margin: 10px;">
-                    <button class="logout"> <a href="../login.html"><p><i class="bi bi-arrow-bar-right"></i>Log out</p></a></button>
+                <ul class="menu">
+                    <button><a href="member.html">
+                            <p><i class="bi bi-people"></i>สมาชิก</p>
+                        </a></button>
+
+                </ul>
+                <ul class="menu">
+                    <button><a href="orders.html">
+                            <p><i class="bi bi-box-seam"></i>รายการสั่งซื้อ</p>
+                        </a></button>
+                </ul>
+                <ul class="menu">
+                    <button><a href="productChange.html">
+                            <p><i class="bi bi-box-seam"></i>แลกซื้อสินค้า</p>
+                        </a></button>
+                </ul>
+                <ul class="menu">
+                    <button><a href="">
+                            <p><i class="bi bi-boxes"></i>จัดการสินค้า</p>
+                        </a></button>
+                </ul>
+                <ul class="menu">
+                    <button><a href="">
+                            <p><i class="bi bi-person-circle"></i>Admin</p>
+                        </a></button>
+                </ul>
+                <hr style="margin: 10px;">
+                <ul class="menu">
+                    <h2>Game Setting</h2>
+                </ul>
+                <ul class="menu">
+                    <button><a href="">
+                            <p><i class="bi bi-award"></i>ผู้เล่น</p>
+                        </a></button>
+                </ul>
+                <ul class="menu">
+                    <button><a href="">
+                            <p><i class="bi bi-controller"></i>ตั้งค่าเกม</p>
+                        </a></button>
+                </ul>
+                <ul class="menu">
+                    <button><a href="">
+                            <p><i class="bi bi-boxes"></i>Product Reward</p>
+                        </a></button>
+                </ul>
+                <hr style="margin: 10px;">
+                <button class="logout" id="modalLogout">
+                    <p><i class="bi bi-arrow-bar-right"></i>Log out</p>
+                </button>
+
+                <!-- Logout modal -->
+                <div id="LogoutModal" class="Logoutmodal">
+                    <!-- Modal content -->
+                    <div class="Logout-content">
+                        <div class="modal-header">
+                            <div class="Logout"><i class="bi bi-arrow-bar-right"></i>Log out</div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="sure-logout">Are you sure you want to Log out</div>
+                        </div>
+                        <div class="footer-logout">
+                            <button id="cancels" class="cancelslogout">Cancel</button>
+                            <button id="LogoutBtn" class="btn-logout"><a href="../login.html">Logout</a></button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="right">
             <!-- ส่วนทางขวา -->
 
-            <nav> <h1>รายการสั่งซื้อ</h1><h1><i class="bi bi-bell-fill" style="color:#28B7E1;cursor: pointer;"></i></h1></nav>
+            <nav>
+                <h1>รายการสั่งซื้อ</h1>
+                <h1><i class="bi bi-bell-fill" style="color:#28B7E1;cursor: pointer;"></i></h1>
+            </nav>
             <div class="emptyBox"></div>
-            <div class="menu-orders" >
-                <a href="#" id="orderLink" class="menu-item"><div class="order">รายการสั่งซื้อ</div></a>
-                <a href="#" id="tradingLink" class="menu-item"><div class="Trading" >การแลกซื้อสินค้า</div></a>
+            <div class="menu-orders">
+                <a href="#" id="orderLink" class="menu-item">
+                    <div class="order">รายการสั่งซื้อ</div>
+                </a>
+                <a href="#" id="tradingLink" class="menu-item">
+                    <div class="Trading">การแลกซื้อสินค้า</div>
+                </a>
             </div>
-            
+
             <hr>
             <form action="">
                 <div class="search-icon">
@@ -72,130 +119,205 @@
                         <input type="text" placeholder="Search" id="mysearch">
                     </div>
                 </div>
-             </form>
-            <div class="dataTable" >
+            </form>
+            <div class="dataTable">
                 <table>
-                <tr class="header-content">
-                  <th><h2>No.</h2></th>
-                  <th><h2>หมายเลขสั่งซื้อ</h2></th>
-                  <th><h2>ชื่อผู้ใช้</h2></th>
-                  <th><h2>สินค้า</h2></th>
-                  <th><h2>จำนวน</h2></th>
-                  <th><h2>ราคา (บาท)</h2></th>
-                  <th><h2>Line Point</h2></th>
-                  <th><h2>Total Point</h2></th>
-                  <th><h2>การชำระเงิน</h2></th>
-                  <th><h2>Shipping</h2></th>
-                  <th><h2>รายละเอียด</h2></th>
-                <tr>
-                  <td>1</td>
-                  <td>202310230005</td>
-                  <td>Peter Parker</td>
-                  <td>My Beer</td>
-                  <td>2</td>
-                  <td>100</td>
-                  <td>10</td>
-                  <td>105</td>
-                  <td><div class="status">
-                    <div class="circle-status"></div>
-                    <div class="show-status">รอชำระเงิน</div>
-                  </div></td>
-                  <td><div class="status">
-                    <div class="circle-status"></div>
-                    <div class="show-status">ยังไม่ดำเนินการ</div>
-                  </div></td>
-                  <td><btn><p1>ดูรายละเอียด</p1></btn></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>202310230004</td>
-                    <td>Deen John</td>
-                    <td>My Beer</td>
-                    <td>2</td>
-                    <td>100</td>
-                    <td>10</td>
-                    <td>100</td>
-                    <td><div class="status">
-                      <div class="circle-status"></div>
-                      <div class="show-status">รอชำระเงิน</div>
-                    </div></td>
-                    <td><div class="status">
-                      <div class="circle-status"></div>
-                      <div class="show-status">ยังไม่ดำเนินการ</div>
-                    </div></td>
-                    <td><btn><p1>ดูรายละเอียด</p1></btn></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>202310230003</td>
-                    <td>Suriya Park</td>
-                    <td>My Beer</td>
-                    <td>1</td>
-                    <td>50</td>
-                    <td>5</td>
-                    <td>300</td>
-                    <td><div class="status">
-                      <div class="circle-status"></div>
-                      <div class="show-status">ชำระเงินแล้ว</div>
-                    </div></td>
-                    <td><div class="status">
-                      <div class="circle-status"></div>
-                      <div class="show-status">จัดส่งสำเร็จ</div>
-                    </div></td>
-                    <td><btn><p1>ดูรายละเอียด</p1></btn></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>202310230002</td>
-                    <td>Jin Kasuma</td>
-                    <td>My Beer</td>
-                    <td>6</td>
-                    <td>300</td>
-                    <td>30</td>
-                    <td>450</td>
-                    <td><div class="status">
-                      <div class="circle-status"></div>
-                      <div class="show-status">ชำระเงินแล้ว</div>
-                    </div></td>
-                    <td><div class="status">
-                      <div class="circle-status"></div>
-                      <div class="show-status">จัดส่งสำเร็จ</div>
-                    </div></td>
-                    <td><btn><p1>ดูรายละเอียด</p1></btn></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>202310230001</td>
-                    <td>Minnie Lama</td>
-                    <td>My Beer</td>
-                    <td>6</td>
-                    <td>300</td>
-                    <td>30</td>
-                    <td>320</td>
-                    <td><div class="status">
-                      <div class="circle-status"></div>
-                      <div class="show-status">ชำระเงินแล้ว</div>
-                    </div></td>
-                    <td><div class="status">
-                      <div class="circle-status"></div>
-                      <div class="show-status">จัดส่งสำเร็จ</div>
-                    </div></td>
-                    <td><btn><p1>ดูรายละเอียด</p1></btn></td>
-                </tr>
-              </table>
-              
+                    <tr class="header-content">
+                        <th>
+                            <h2>No.</h2>
+                        </th>
+                        <th>
+                            <h2>หมายเลขสั่งซื้อ</h2>
+                        </th>
+                        <th>
+                            <h2>ชื่อผู้ใช้</h2>
+                        </th>
+                        <th>
+                            <h2>สินค้า</h2>
+                        </th>
+                        <th>
+                            <h2>จำนวน</h2>
+                        </th>
+                        <th>
+                            <h2>ราคา (บาท)</h2>
+                        </th>
+                        <th>
+                            <h2>Line Point</h2>
+                        </th>
+                        <th>
+                            <h2>Total Point</h2>
+                        </th>
+                        <th>
+                            <h2>การชำระเงิน</h2>
+                        </th>
+                        <th>
+                            <h2>Shipping</h2>
+                        </th>
+                        <th>
+                            <h2>รายละเอียด</h2>
+                        </th>
+                    <tr>
+                        <td>1</td>
+                        <td>202310230005</td>
+                        <td>Peter Parker</td>
+                        <td>My Beer</td>
+                        <td>2</td>
+                        <td>100</td>
+                        <td>10</td>
+                        <td>105</td>
+                        <td>
+                            <div class="status">
+                                <div class="circle-status"></div>
+                                <div class="show-status">รอชำระเงิน</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="status">
+                                <div class="circle-status"></div>
+                                <div class="show-status">ยังไม่ดำเนินการ</div>
+                            </div>
+                        </td>
+                        <td>
+                            <btn>
+                                <p1>ดูรายละเอียด</p1>
+                            </btn>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>202310230004</td>
+                        <td>Deen John</td>
+                        <td>My Beer</td>
+                        <td>2</td>
+                        <td>100</td>
+                        <td>10</td>
+                        <td>100</td>
+                        <td>
+                            <div class="status">
+                                <div class="circle-status"></div>
+                                <div class="show-status">รอชำระเงิน</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="status">
+                                <div class="circle-status"></div>
+                                <div class="show-status">ยังไม่ดำเนินการ</div>
+                            </div>
+                        </td>
+                        <td>
+                            <btn>
+                                <p1>ดูรายละเอียด</p1>
+                            </btn>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>202310230003</td>
+                        <td>Suriya Park</td>
+                        <td>My Beer</td>
+                        <td>1</td>
+                        <td>50</td>
+                        <td>5</td>
+                        <td>300</td>
+                        <td>
+                            <div class="status">
+                                <div class="circle-status"></div>
+                                <div class="show-status">ชำระเงินแล้ว</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="status">
+                                <div class="circle-status"></div>
+                                <div class="show-status">จัดส่งสำเร็จ</div>
+                            </div>
+                        </td>
+                        <td>
+                            <btn>
+                                <p1>ดูรายละเอียด</p1>
+                            </btn>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>202310230002</td>
+                        <td>Jin Kasuma</td>
+                        <td>My Beer</td>
+                        <td>6</td>
+                        <td>300</td>
+                        <td>30</td>
+                        <td>450</td>
+                        <td>
+                            <div class="status">
+                                <div class="circle-status"></div>
+                                <div class="show-status">ชำระเงินแล้ว</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="status">
+                                <div class="circle-status"></div>
+                                <div class="show-status">จัดส่งสำเร็จ</div>
+                            </div>
+                        </td>
+                        <td>
+                            <btn>
+                                <p1>ดูรายละเอียด</p1>
+                            </btn>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>202310230001</td>
+                        <td>Minnie Lama</td>
+                        <td>My Beer</td>
+                        <td>6</td>
+                        <td>300</td>
+                        <td>30</td>
+                        <td>320</td>
+                        <td>
+                            <div class="status">
+                                <div class="circle-status"></div>
+                                <div class="show-status">ชำระเงินแล้ว</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="status">
+                                <div class="circle-status"></div>
+                                <div class="show-status">จัดส่งสำเร็จ</div>
+                            </div>
+                        </td>
+                        <td>
+                            <btn>
+                                <p1>ดูรายละเอียด</p1>
+                            </btn>
+                        </td>
+                    </tr>
+                </table>
+
             </div>
             <div class="dataTable">
                 <div class="numberNo">
-                    <div class="boxNo"><a href=""><h1>1</h1></a></div>
-                    <div class="boxNo"><a href=""><h1>2</h1></a></div>
-                    <div class="boxNo"><a href=""><h1>3</h1></a></div>
-                    <div class="boxNo"><a href=""><h1>4</h1></a></div>
-                    <div class="boxNo"><a href=""><h1>5</h1></a></div>
+                    <div class="boxNo"><a href="">
+                            <h1>1</h1>
+                        </a></div>
+                    <div class="boxNo"><a href="">
+                            <h1>2</h1>
+                        </a></div>
+                    <div class="boxNo"><a href="">
+                            <h1>3</h1>
+                        </a></div>
+                    <div class="boxNo"><a href="">
+                            <h1>4</h1>
+                        </a></div>
+                    <div class="boxNo"><a href="">
+                            <h1>5</h1>
+                        </a></div>
                 </div>
             </div>
         </div>
     </div>
     <script src="../Js/order.js"></script>
+    <script src="../js/Modal.js"></script>
+
 </body>
+
 </html>

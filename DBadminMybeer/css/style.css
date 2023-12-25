@@ -9,6 +9,7 @@
 label{
     font-family: 'Roboto', sans-serif;
     font-weight: 400 !important;
+    font-size: 14px;
 }
 h1{
     font-size: 1.25rem;
@@ -167,6 +168,13 @@ button a{
     text-decoration: none;
     color: inherit;
 }
+
+.Logout
+{
+    font-size:1.125rem;
+    font-weight:800;
+}
+
 nav {
     color: white;
     width: calc(100% - 265px);
@@ -376,17 +384,3 @@ td{
         height: 50px;
         align-items: center;
     }
-    /* .listUsermenu{
-        margin-left: 2px;
-        padding: 0 10px 25px 10px;
-        color: #8CACB8;
-    }
-    .listUsermenu a{
-        text-decoration: none;
-        color: inherit;
-    }
-    .listUsermenu:hover{
-        color: #009FC9;
-        border-bottom: 5px #009FC9 solid;
-    } */
-
