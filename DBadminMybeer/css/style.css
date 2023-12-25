@@ -214,9 +214,7 @@ nav {
   .search-icon:hover{
     width: 300px;
   }
-  table {
-    border-collapse: collapse; /* รวมขอบของเซลล์เข้าด้วยกัน */
-  }
+
 
   table th,
   table td {
