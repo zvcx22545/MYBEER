@@ -6,100 +6,139 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-label{
+
+label {
     font-family: 'Roboto', sans-serif;
     font-weight: 400 !important;
     font-size: 14px;
 }
-h1{
+
+h1 {
     font-size: 1.25rem;
     font-weight: 800;
 }
-h2{
+
+h2 {
     font-size: 1.125rem;
     font-weight: 800;
 }
-p{
+
+p {
     font-size: 0.875rem;
 }
 
-i{
+i {
     height: 18px;
     width: 18px;
     margin-right: 18px;
     padding: 9px;
 }
-.innerContents{
+
+.innerContents {
     display: flex;
 }
-.userpaymentProfile{
+
+.userpaymentProfile {
     display: flexbox;
 }
-.numberNo{
+
+.numberNo {
     display: flex;
     margin-left: 50rem;
     padding-bottom: 20px;
 }
-.boxNo{
+
+.boxNo {
     margin-left: 2px;
     padding: 5px 10px 5px 10px;
     background-color: #EDEDED;
     border-radius: 5px;
 }
-.boxNo:hover{
+
+.boxNo:hover {
     color: white;
     background-color: #24B6E0;
     border-radius: 5px;
 }
+
 .col_1 {
     width: 45px;
 }
+
 .col_2 {
     width: 100px;
 }
+
 .col_3 {
     width: 150px;
 }
+
 .col_4 {
     width: 200px;
 }
 
-.dataTable{
-  width: 100%;
-  display: flex;
-  padding-top: 10px;
-  text-align: center;
-  align-items: center;
-  justify-content: center; 
+.container-table
+{
+    padding: 20px;
+    height: 90%;
 }
-table, td, th {  
+
+.dataTable {
+    width:100%;
+    display: flex;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: center;
+    background: #F9F9F9;
+}
+.dataTables {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+
+table,
+td,
+th {
     border: 2px solid #ddd;
     text-align: left;
-  }
-  
-  table {
+}
+
+table {
     border-collapse: collapse;
-    width: 98%;
-   }
-  th, td {
+    width: 100%;
+}
+
+th,
+td {
     padding: 15px;
     right: 0;
     width: auto;
-  }
+}
+
+td
+{
+    background: #FFF;
+}
 
 
-btn a{
+btn a {
     text-decoration: none;
     color: inherit;
-}  
-btn{ 
+}
+
+btn {
     border: 1px #24B6E0 solid;
     color: #24B6E0;
     padding: 5px 20px 5px 20px;
     border-radius: 10px;
     cursor: pointer;
 }
-btn:hover{
+
+btn:hover {
     color: white;
     background-color: #24B6E0;
 }
@@ -108,19 +147,21 @@ btn:hover{
     display: flex;
     height: 100vh;
 }
+
 /* ส่วนซ้าย */
 .left {
     position: fixed;
     bottom: 0;
     left: 0;
     background-color: white;
-    width: 265px; 
+    width: 265px;
     height: 100%;
     text-align: center;
     padding: 0 1.7rem;
     box-shadow: 0.5px 0px 5px #6f6d6d;
 }
-.logo{
+
+.logo {
     /* display: flex; */
     align-items: center;
     justify-content: center;
@@ -132,29 +173,34 @@ btn:hover{
     background-image: url('https://cdn.discordapp.com/attachments/1178953034064207932/1187299911734145074/logo-2_1.png?ex=65966235&is=6583ed35&hm=b013b765c8bf4ee02131bd6e4cbb8f8742806b11aeaefa25f45b70b3f10d4f84&');
     background-repeat: no-repeat;
 }
-.menu{
+
+.menu {
     height: 100%;
     position: relative;
     list-style: none;
     padding: 5px 0 5px 0;
 }
-button{
+
+button {
     padding: 8px;
     width: 100%;
     text-align: left;
     background-color: inherit;
-    border: none; 
+    border: none;
     cursor: pointer;
 }
-button:hover{
+
+button:hover {
     background-color: #24B6E0;
     color: white;
     border-radius: 5px;
 }
-button a{
+
+button a {
     text-decoration: none;
     color: inherit;
 }
+
 .logout {
     position: absolute;
     bottom: 0;
@@ -164,15 +210,15 @@ button a{
     margin-left: -50px;
     padding-right: 10px;
 }
+
 .logout a {
     text-decoration: none;
     color: inherit;
 }
 
-.Logout
-{
-    font-size:1.125rem;
-    font-weight:800;
+.Logout {
+    font-size: 1.125rem;
+    font-weight: 800;
 }
 
 nav {
@@ -184,26 +230,31 @@ nav {
     justify-content: space-between;
     display: flex;
     height: 35px;
-    background-color:  #241E20;
+    background-color: #241E20;
 }
-.emptyBox{
+
+.emptyBox {
     margin-bottom: 32px;
 }
+
 /* ส่วนขวา */
-.contentTop{
+.contentTop {
     position: fixed;
 }
+
 .right {
-    width: calc(100% - 265px); 
+    width: calc(100% - 265px);
     height: 100%;
     bottom: 0;
     right: 0;
     margin-left: 265px;
 }
-.create{
+
+.create {
     position: fixed;
     display: flex;
-    top: 2.5rem; /* ขยับจากด้านบนลงมา 4.5rem */
+    top: 2.5rem;
+    /* ขยับจากด้านบนลงมา 4.5rem */
     right: 0.9rem;
     height: 25px;
     background-color: #24B6E0;
@@ -216,10 +267,12 @@ nav {
     color: white;
     cursor: pointer;
 }
+
 .search-icon {
     position: fixed;
-    top: 2.5rem; /* ขยับจากด้านบนลงมา 4.5rem */
-    right: 0.1rem; 
+    top: 2.5rem;
+    /* ขยับจากด้านบนลงมา 4.5rem */
+    right: 0.1rem;
     display: flex;
     transition: 0.5s;
     width: 9px;
@@ -240,104 +293,120 @@ nav {
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
-  }
-  .icon {
+}
+
+.icon {
     width: 20px;
     height: 20px;
     flex-shrink: 0;
-  }
-  .search-icon .input
-  {
-      position: relative;
-      width: 300px;
-      height: 20px;
-      left: 9px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  .search-icon .input input
-  {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-      outline: none;
-      font-size: 16px;
-  }
-  .input input::placeholder
-  {
-      color: var(--MBN---Blue, #28b7e1);
-  }
-  .search-icon:hover{
+}
+
+.search-icon .input {
+    position: relative;
     width: 300px;
-  }
+    height: 20px;
+    left: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
-  table th,
-  table td {
-    border-left: none; /* ลบเส้นขอบด้านซ้ายของเซลล์ */
-    border-right: none; /* ลบเส้นขอบด้านขวาของเซลล์ */
+.search-icon .input input {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
     border: none;
-    font-size: clamp(10px,0.878vw,14px);
-  }
-  table tr {
-    border-bottom: 1px solid #ddd; /* เส้นขอบด้านล่างของแถว */
-  }
+    outline: none;
+    font-size: 16px;
+}
 
-  th>h2{
+.input input::placeholder {
+    color: var(--MBN---Blue, #28b7e1);
+}
+
+.search-icon:hover {
+    width: 300px;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse; /* This ensures borders are shared between cells */
+}
+
+table th,
+table td {
+    border-left: none;
+    /* ลบเส้นขอบด้านซ้ายของเซลล์ */
+    border-right: none;
+    /* ลบเส้นขอบด้านขวาของเซลล์ */
+    border: none;
+    font-size: clamp(10px, 0.878vw, 14px);
+}
+
+table tr {
+    border-bottom: 1px solid #ddd;
+    /* เส้นขอบด้านล่างของแถว */
+}
+
+th>h2 {
     font-size: 12px;
-   
+
 }
-.header-content
-{
-    color: #fff;
-    background-color: #414141;
+
+.header-content {
+    color: #7E8695;
+    border-top: 1px solid var(--MBN---Grey, #B3B7BA);
+    border-bottom: 1px solid var(--MBN---Grey, #B3B7BA);
+    background: #E9EBED;
 }
-td{
-    font-weight:400 ;
+
+td {
+    font-weight: 400;
     font-size: 14px;
     font-style: normal;
 }
 
-.boxNo a
-{
+.boxNo a {
     text-decoration: none;
 }
-.boxNo a:hover
-{
+
+.boxNo a:hover {
     color: #fff;
 }
 
 
 /* UserProfile */
-.userProfile{
+.userProfile {
     margin-top: 45px;
-    margin-left: 2rem; 
+    margin-left: 2rem;
     box-shadow: 0px 0px 8px #6f6d6d;
     border-radius: 15px;
     padding: 15px;
     width: 95%;
     height: 260px;
     display: flex;
-    
+
 }
-.photo{
+
+.photo {
     width: 100px;
     height: 100px;
     border-radius: 121px;
     margin-top: 30px;
     margin-right: 10px;
 }
-.userData{
+
+.userData {
     padding: 10px;
     margin-top: -15px;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.userDB{
+
+.userDB {
     padding: 10px;
     font-size: 0.875rem;
     font-weight: 500;
@@ -347,41 +416,43 @@ td{
 .dropdown {
     position: relative;
     display: inline-block;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 180px;
     margin-left: -60px;
     font-size: 12px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 10px;
     z-index: 1;
-  }
-  
-  .dropdown:hover .dropdown-content {
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
     border-radius: 10px;
-  }
+}
 
-  .dropdown:hover {
+.dropdown:hover {
     background-color: #24B6E0;
     color: white;
     border-radius: 5px;
     height: 20px;
     width: 80px;
-  }
-  .dropdown-content a{
+}
+
+.dropdown-content a {
     text-decoration: none;
-    
-    }
-    /* -------------------- */
-    .menuUser{
-        margin-top: 15px;
-        padding-left: 5rem;
-        display: flex;
-        height: 50px;
-        align-items: center;
-    }
+
+}
+
+/* -------------------- */
+.menuUser {
+    margin-top: 15px;
+    padding-left: 5rem;
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
